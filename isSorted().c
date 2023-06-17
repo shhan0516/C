@@ -22,7 +22,7 @@ int main() {
 
     
 
-    int len = sizeof (aryData ) / sizeof (int);
+    int len = sizeof (aryData ) / sizeof (aryData[0]);
 
     
 
@@ -45,7 +45,7 @@ int isSorted(int* array, int length) {
 
     for(int i = 0; i < length - 1; i++) {
 
-        if(*(array + i) > *(array + i + 1)) {
+        if(array[i] > array[i + 1]) {
 
             return 0;
 
